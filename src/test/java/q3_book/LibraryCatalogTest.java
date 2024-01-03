@@ -33,11 +33,11 @@ public class LibraryCatalogTest {
 
     @Test
     public void testReturnBook() {
-        Book book = new Book("Test Book", "Test Author");
+        Book book = new Book("Test Book1", "Test Author");
         libraryCatalog.addBook(book);
-        libraryCatalog.borrowBook("Test Book");
+        libraryCatalog.borrowBook("Test Book1");
 
-        libraryCatalog.returnBook("Test Book");
+        libraryCatalog.returnBook("Test Book1");
 
         assertTrue(book.isAvailable());
     }
